@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин имени меня| Главная</title>
+    <link rel="icon" href="/photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный домик имени меня</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                        <li><a href="read-books.html">Прочитанные</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск книг...">
+                <button onclick="searchBooks()">Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <h1>Откройте мир книг</h1>
+            <p>Более 10 000 книг различных жанров ждут вас</p>
+            <a href="search.html" class="btn" style="margin-top: 1rem;">Найти книгу</a>
+        </div>
+        
+        <h2>Популярные книги</h2>
+        <div class="featured-books">
+            <div class="book-card">
+                <img src="photo/mim.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>Мастер и Маргарита</h3>
+                    <p>Михаил Булгаков</p>
+                    <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <img src="photo/1984.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>1984</h3>
+                    <p>Джордж Оруэлл</p>
+                    <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <img src="photo/pin.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>Преступление и наказание</h3>
+                    <p>Фёдор Достоевский</p>
+                    <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <img src="/photo/mp.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>Маленький принц</h3>
+                    <p>Антуан де Сент-Экзюпери</p>
+                    <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Книжный домик имени меня. Все права защищены мной и моей собакой.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
