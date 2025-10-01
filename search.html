@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск книг | Книжный магазин имени меня</title>
+    <link rel="icon" href="/photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный уголок имени меня</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                        <li><a href="read-books.html">Прочитанные</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск книг...">
+                <button onclick="searchBooks()">Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Поиск книг</h1>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="genre">Жанр</label>
+                <select id="genre">
+                    <option value="">Все жанры</option>
+                    <option value="fiction">Художественная литература</option>
+                    <option value="fantasy">Фантастика</option>
+                    <option value="detective">Детективы</option>
+                    <option value="classic">Классика</option>
+                    <option value="nonfiction">Нон-фикшн</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="year">Год издания</label>
+                <input type="number" id="year" placeholder="2020">
+            </div>
+            <div class="filter-group">
+                <label for="rating">Минимальный рейтинг</label>
+                <select id="rating">
+                    <option value="0">Любой рейтинг</option>
+                    <option value="3">3+ звезды</option>
+                    <option value="4">4+ звезды</option>
+                    <option value="4.5">4.5+ звезды</option>
+                </select>
+            </div>
+            <button class="btn">Применить фильтры</button>
+        </div>
+        
+        <div class="search-results">
+            <div class="results-count">Найдено 3 книги</div>
+            <div class="featured-books">
+                <div class="book-card">
+                    <img src="/photo/mim.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>Мастер и Маргарита</h3>
+                        <p>Михаил Булгаков</p>
+                        <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/photo/1984.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>Джордж Оруэлл</p>
+                        <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/photo/pin.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>Преступление и наказание</h3>
+                        <p>Фёдор Достоевский</p>
+                        <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Книжный уголок имени меня. Все права защищены мной и моей собакой.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
