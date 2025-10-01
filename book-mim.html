@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер и Маргарита | Книжный магазин  имени меня</title>
+    <link rel="icon" href="/photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный уголок имени меня</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                        <li><a href="read-books.html">Прочитанные</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск книг...">
+                <button onclick="searchBooks()">Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="book-detail">
+            <div class="book-cover">
+                <img src="photo/mim.jpg" alt="Обложка книги Мастер и Маргарита">
+            </div>
+            <div class="book-content">
+                <h1>Мастер и Маргарита</h1>
+                <div class="book-meta">
+                    <p><strong>Автор:</strong> Михаил Булгаков</p>
+                    <p><strong>Жанр:</strong> Роман, Сатира, Фантастика</p>
+                    <p><strong>Год издания:</strong> 1967</p>
+                    <p><strong>Рейтинг:</strong> ★★★★★ (4.8/5)</p>
+                </div>
+                <div class="book-description">
+                    <p>"Мастер и Маргарита" — самый известный роман Михаила Булгакова, работа над которым началась в конце 1920-х годов и продолжалась вплоть до смерти писателя. Роман является уникальным сплавом сатиры, фантастики и философской притчи.</p>
+                    <p>Действие романа разворачивается в двух планах: в Москве 1930-х годов, куда прибывает сатана со своей свитой, и в древнем Ершалаиме, где происходит суд над Иешуа Га-Ноцри. Эти два сюжета тесно переплетаются, создавая многогранное произведение, затрагивающее вечные темы добра и зла, любви и предательства, творчества и власти.</p>
+                </div>
+                <div class="book-actions">
+                    <button class="btn">Добавить в корзину</button>
+                    <button class="btn" style="background-color: #27ae60;">Отметить как прочитанную</button>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 5rem;">
+            <h2>Похожие книги</h2>
+            <div class="featured-books">
+                <div class="book-card">
+                    <img src="photo/mp.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>Маленький принц</h3>
+                        <p>Антуан де Сент-Экзюпери</p>
+                        <a href="book-mp.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="photo/1984.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>Джордж Оруэлл</p>
+                        <a href="book-1984.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Книжный уголок имени меня. Все права защищены мной и моей собакой.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
