@@ -9,4 +9,4 @@ search.html         # Страница поиска
 read-books.html     # Прочитанные книги
 css/ style.css      # Общие стили
 js/ main.js         # Общие скрипты
-photo               #Общие фото
+photo               # Общие фото
