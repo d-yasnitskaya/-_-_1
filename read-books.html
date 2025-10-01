@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прочитанные книги | Книжный магазин имени меня</title>
+    <link rel="icon" href="/photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный уголок</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                        <li><a href="read-books.html">Прочитанные</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск книг...">
+                <button onclick="searchBooks()">Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Мои прочитанные книги</h1>
+        
+        <div class="reading-stats">
+            <div class="reading-stat">
+                <div class="stat-number">42</div>
+                <div class="stat-label">Всего прочитано</div>
+            </div>
+            <div class="reading-stat">
+                <div class="stat-number">12</div>
+                <div class="stat-label">В этом году</div>
+            </div>
+            <div class="reading-stat">
+                <div class="stat-number">3,842</div>
+                <div class="stat-label">Всего страниц</div>
+            </div>
+            <div class="reading-stat">
+                <div class="stat-number">4.2</div>
+                <div class="stat-label">Средний рейтинг</div>
+            </div>
+        </div>
+        
+        <div class="books-grid">
+            <div class="book-card read-book-card">
+                <div class="read-badge">Прочитано</div>
+                <img src="/photo/mim.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>Мастер и Маргарита</h3>
+                    <p>Михаил Булгаков</p>
+                    <p>Ваша оценка: ★★★★★</p>
+                </div>
+            </div>
+            <div class="book-card read-book-card">
+                <div class="read-badge">Прочитано</div>
+                <img src="/photo/1984.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>1984</h3>
+                    <p>Джордж Оруэлл</p>
+                    <p>Ваша оценка: ★★★★☆</p>
+                </div>
+            </div>
+            <div class="book-card read-book-card">
+                <div class="read-badge">Прочитано</div>
+                <img src="/photo/pin.jpg" alt="Обложка книги">
+                <div class="book-info">
+                    <h3>Преступление и наказание</h3>
+                    <p>Фёдор Достоевский</p>
+                    <p>Ваша оценка: ★☆☆☆☆</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Книжный уголок имени меня. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
