@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя | Книжный магазин имени меня</title>
+    <link rel="icon" href="/photo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Книжный уголок имени меня</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="profile.html">Профиль</a></li>
+                        <li><a href="read-books.html">Прочитанные</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск книг...">
+                <button onclick="searchBooks()">Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-header">
+            <img src="/photo/ya.jpg" alt="Аватар пользователя" class="profile-avatar">
+            <div class="profile-info">
+                <h1>Ясницкая Дарья, ЦИВТбву-21</h1>
+                <p>Читатель с 2025 года</p>
+                <p>Любимые жанры: Фэнтези, Фантастика, Детективы</p>
+                <button class="btn">Редактировать профиль</button>
+            </div>
+        </div>
+        
+        <div class="profile-stats">
+            <div class="stat-card">
+                <div class="stat-number">42</div>
+                <div class="stat-label">Прочитано книг</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">В процессе чтения</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">128</div>
+                <div class="stat-label">В избранном</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">36</div>
+                <div class="stat-label">Отзывов написано</div>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Недавно просмотренные</h2>
+            <div class="featured-books">
+                <div class="book-card">
+                    <img src="/photo/mim.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>Мастер и Маргарита</h3>
+                        <p>Михаил Булгаков</p>
+                        <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="/photo/1984.jpg" alt="Обложка книги">
+                    <div class="book-info">
+                        <h3>1984</h3>
+                        <p>Джордж Оруэлл</p>
+                        <a href="book.html" class="btn" style="margin-top: 0.5rem; display: inline-block;">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Книжный уголок имени меня. Все права защищены мной и моей собакой.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
